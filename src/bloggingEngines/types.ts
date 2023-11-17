@@ -7,7 +7,7 @@ export interface ArticleEmbed {
 
 export interface ArticleMetadata {
     id: string;
-    timestamp: number;
+    timestamp: Date;
 }
 
 export interface Article extends ArticleMetadata {

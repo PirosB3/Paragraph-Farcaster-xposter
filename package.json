@@ -4,17 +4,25 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/client-preset": "^4.1.0",
+    "@graphql-typed-document-node/core": "^3.2.0",
     "@types/node": "^20.9.1",
     "nodemon": "^3.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   },
   "scripts": {
-    "dev": "nodemon src/main.ts"
+    "dev": "nodemon src/main.ts",
+    "compile": "graphql-codegen",
+    "watch": "graphql-codegen -w"
   },
   "dependencies": {
+    "@apollo/client": "^3.8.7",
     "arweave": "^1.14.4",
     "buffer": "^6.0.3",
+    "graphql": "^16.8.1",
+    "react": "^18.2.0",
     "rss-parser": "^3.13.0"
   }
 }

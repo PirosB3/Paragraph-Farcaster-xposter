@@ -1,0 +1,20 @@
+{
+  "name": "csm-cross-poster",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.9.1",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "dev": "nodemon src/main.ts"
+  },
+  "dependencies": {
+    "arweave": "^1.14.4",
+    "buffer": "^6.0.3",
+    "rss-parser": "^3.13.0"
+  }
+}

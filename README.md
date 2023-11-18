@@ -15,9 +15,43 @@
 
 Each environment variable plays a crucial role in configuring the application:
 
-NEYNAR_API_KEY: Your unique API key provided by Neynar, used for authenticating API requests to Farcaster.
-NEYNAR_SIGNER_UUID: The unique identifier for your Neynar-managed signer, crucial for securing and validating your cross-posts to Farcaster.
-PARAGRAPH_PUBLICATION_SLUG: Identifies the specific publication slug on Paragraph XYZ from which articles will be cross-posted.
-PARAGRAPH_URL: The base URL for Paragraph XYZ Publication, required for hyperlinks
-REDIS_URL: The connection string for your Redis instance, used for storing and retrieving the last cross-posted article's data.
-REDIS_KEY: A specific key in Redis under which the last cross-posted article's timestamp is store.
+- NEYNAR_API_KEY: Your unique API key provided by Neynar, used for authenticating API requests to Farcaster.
+- NEYNAR_SIGNER_UUID: The unique identifier for your Neynar-managed signer, crucial for securing and validating your cross-posts to Farcaster.
+- PARAGRAPH_PUBLICATION_SLUG: Identifies the specific publication slug on Paragraph XYZ from which articles will be cross-posted.
+- PARAGRAPH_URL: The base URL for Paragraph XYZ Publication, required for hyperlinks
+- REDIS_URL: The connection string for your Redis instance, used for storing and retrieving the last cross-posted article's data.
+- REDIS_KEY: A specific key in Redis under which the last cross-posted article's timestamp is store.
+
+
+## Running Instructions
+
+To get the Farcaster Cross-poster up and running on your system, follow these steps:
+
+1. **Clone the Repository**
+   - Begin by cloning the repository to your local machine. You can do this by running:
+     ```bash
+     git clone https://github.com/PirosB3/Paragraph-Farcaster-xposter.git
+     ```
+
+2. **Install Dependencies**
+   - Navigate to the cloned directory and install the required dependencies using Yarn:
+     ```bash
+     cd Paragraph-Farcaster-xposter
+     yarn
+     ```
+
+3. **Build the Application**
+   - Compile the TypeScript code into JavaScript for execution:
+     ```bash
+     yarn build
+     ```
+
+4. **Set Environment Variables**
+   - Set up the required environment variables. You can use a tool like `direnv` for convenience. Create a `.env` file in the root of the project and add the necessary variables
+
+5. **Run the Application**
+   - Finally, run the built application with Node.js:
+     ```bash
+     node build/main.js
+     ```
+   - This will start the application and begin cross-posting articles based on your specified configuration.

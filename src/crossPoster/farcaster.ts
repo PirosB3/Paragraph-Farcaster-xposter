@@ -22,8 +22,6 @@ export class NeynarBackedCrossPoster {
             {
                 url: article.link,
             },
-            
-            // For now, only post the first image
             ...article.embeds.map(embed => ({url: embed.url}))
         ];
         const data = {

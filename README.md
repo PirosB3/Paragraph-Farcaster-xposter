@@ -9,6 +9,7 @@
 - Relies on Redis for storing the timestamp of the last cross-posted article, for tracking and avoiding duplicate postings. You can easily adapt to other storage solutions if needed.
 - Currently, the system does not support pagination, but it's built to handle up to 100 articles per page. This can be easily extended for more pagination needs.
 - Requires a Neynar subscription for posting to Farcaster. Users must create a [signer](https://docs.neynar.com/docs/write-to-farcaster-with-neynar-managed-signers) to authenticate and authorize posts.
+- In order to avoid rate limits from Neynar, we only post 5 casts at a time.
 
 ## Environment variables
 

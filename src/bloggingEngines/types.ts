@@ -14,11 +14,10 @@ export interface Article extends ArticleMetadata {
     title: string;
     link: string;
     embeds: ArticleEmbed[];
-    pubDate: Date;
 }
 
 
 export interface BlogEngine {
     getArticles(): Promise<ArticleMetadata[]>;
-    getArticle(id: string): Promise<Article>;
+    getArticle(article: ArticleMetadata): Promise<Article>;
 }

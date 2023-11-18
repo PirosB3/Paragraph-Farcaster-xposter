@@ -20,9 +20,10 @@
   "dependencies": {
     "@apollo/client": "^3.8.7",
     "arweave": "^1.14.4",
+    "axios": "^1.6.2",
     "buffer": "^6.0.3",
     "graphql": "^16.8.1",
-    "react": "^18.2.0",
-    "rss-parser": "^3.13.0"
+    "redis": "^4.6.10",
+    "zod": "^3.22.4"
   }
 }

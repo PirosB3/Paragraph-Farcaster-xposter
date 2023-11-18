@@ -41,7 +41,7 @@ To get the Farcaster Cross-poster up and running on your system, follow these st
      ```
 
 3. **Build the Application**
-   - Compile the TypeScript code into JavaScript for execution:
+   - Compile the TypeScript code into JavaScript for execution (we use Node v20.5.1):
      ```bash
      yarn build
      ```
